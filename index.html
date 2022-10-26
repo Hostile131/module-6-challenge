@@ -4,13 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Five-Day Forecast</title>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
-
+    <div class="container">
+        <div class="notification is-primary has-text-centered">
+            <h1>Search for a City</h1>
+        </div>
+    </div>
+    <div class="tile is-ancestor">
+        <div class="tile is-parent">
+            <article class="tile is-child">
+                <div class="content">
+                    <input class="input" type="text" placeholder="Text input">                    
+                    <p class="title">Or pick a city you already searched</p>
+                    <div class="buttons">
+                        <button class="button is-success">Save changes</button>
+                        <button class="button is-info">Save and continue</button>
+                        <button class="button is-danger">Cancel</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="tile is-parent">
+            <article class="tile is-child notification is-danger">
+              <p class="title">Wide tile</p>
+              <p class="subtitle">Aligned with the right tile</p>
+              <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas omnis, enim maxime distinctio totam neque nesciunt dolorum exercitationem quasi voluptatibus quia iste nobis deleniti optio soluta, repellendus doloribus necessitatibus fugiat?
+              </div>
+            </article>
+        </div>
+    </div>
+    <div class="tile is-ancestor">
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p class="title">Hello World</p>
+            <p class="subtitle">What is up?</p>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p class="title">Foo</p>
+            <p class="subtitle">Bar</p>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p class="title">Third column</p>
+            <p class="subtitle">With some content</p>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+            </div>
+          </article>
+        </div>
+        <div class="tile is-parent">
+            <article class="tile is-child box">
+              <p class="title">Hello World</p>
+              <p class="subtitle">What is up?</p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <p class="title">Foo</p>
+              <p class="subtitle">Bar</p>
+            </article>
+          </div>
+      </div>
     <script src="./assets/js/script.js"></script>
 </body>
 
