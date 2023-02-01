@@ -1,79 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Five-Day Forecast</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
-<body>
-    <div class="container">
-        <div class="notification is-primary has-text-centered">
-            <h1>Search for a City</h1>
-        </div>
-    </div>
-    <div class="tile is-ancestor">
-        <div class="tile is-parent">
-            <article class="tile is-child">
-                <div class="content">
-                    <input class="input" type="text" placeholder="Text input">                    
-                    <p class="title">Or pick a city you already searched</p>
-                    <div class="buttons">
-                        <button class="button is-success">Save changes</button>
-                        <button class="button is-info">Save and continue</button>
-                        <button class="button is-danger">Cancel</button>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="tile is-parent">
-            <article class="tile is-child notification is-danger">
-              <p class="title">Wide tile</p>
-              <p class="subtitle">Aligned with the right tile</p>
-              <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas omnis, enim maxime distinctio totam neque nesciunt dolorum exercitationem quasi voluptatibus quia iste nobis deleniti optio soluta, repellendus doloribus necessitatibus fugiat?
-              </div>
-            </article>
-        </div>
-    </div>
-    <div class="tile is-ancestor">
-        <div class="tile is-parent">
-          <article class="tile is-child box">
-            <p class="title">Hello World</p>
-            <p class="subtitle">What is up?</p>
-          </article>
-        </div>
-        <div class="tile is-parent">
-          <article class="tile is-child box">
-            <p class="title">Foo</p>
-            <p class="subtitle">Bar</p>
-          </article>
-        </div>
-        <div class="tile is-parent">
-          <article class="tile is-child box">
-            <p class="title">Third column</p>
-            <p class="subtitle">With some content</p>
-            <div class="content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A website for searching a 5 day weather forecast"
+    />
+    <title>City Weather Forecast Search</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/pure-style.css" />
+  </head>
+  <body>
+    <div id="layout" class="pure-g">
+      <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+          <h1 class="brand-title">Search for a city</h1>
+          <nav class="nav">
+            <div class="pure-control-group">
+              <input type="text" id="search-value" />
+              <button type="submit" id="search-input" class="pure-button pure-button-primary">Search</button>
             </div>
-          </article>
+            <ul class="history"></ul>
+          </nav>
         </div>
-        <div class="tile is-parent">
-            <article class="tile is-child box">
-              <p class="title">Hello World</p>
-              <p class="subtitle">What is up?</p>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child box">
-              <p class="title">Foo</p>
-              <p class="subtitle">Bar</p>
-            </article>
-          </div>
       </div>
-    <script src="./assets/js/script.js"></script>
-</body>
 
+      <div class="content pure-u-1 pure-u-md-3-4">
+        <div id="today"></div>
+        <h2>5-Day Forecast</h2>
+        <div id="forecast" class="pure-g"></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
